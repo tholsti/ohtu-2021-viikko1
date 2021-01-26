@@ -70,6 +70,3 @@ class TestVarasto(unittest.TestCase):
     def test_stringin_tulostus_toimii(self):
         self.varasto.lisaa_varastoon(5)
         self.assertAlmostEqual(self.varasto.__str__(), "saldo = 5, vielä tilaa 5")
-
-    def test_broken(self):
-        self.assertAlmostEqual(self.varasto.saldo, 20)
